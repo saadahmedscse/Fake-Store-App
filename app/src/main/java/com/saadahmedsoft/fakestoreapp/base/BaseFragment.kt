@@ -13,7 +13,7 @@ import com.saadahmedsoft.base.utils.Constants.Durations.SNACK_SHORT
 import com.saadahmedsoft.base.utils.Constants.Durations.TOAST_LONG
 import com.saadahmedsoft.base.utils.Constants.Durations.TOAST_SHORT
 import com.saadahmedsoft.base.viewmodel.ToolbarViewModel
-import com.saadahmedsoft.batingapp.viewmodel.AppViewModel
+import com.saadahmedsoft.fakestoreapp.viewmodel.AppViewModel
 import com.saadahmedsoft.kotlinhelper.helper.snackBar
 import com.saadahmedsoft.kotlinhelper.helper.toast
 
