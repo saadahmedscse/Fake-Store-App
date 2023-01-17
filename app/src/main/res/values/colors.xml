@@ -5,8 +5,10 @@
     <color name="colorGrey">#777777</color>
     <color name="colorLightGrey">#E6E6E6</color>
     <color name="colorDarkGrey">#202020</color>
-    <color name="mode_color">#12112E</color>
-    <color name="menu_item_color">#E6E6E6</color>
+    <color name="colorBackground">#F7F2FF</color>
+    <color name="colorLightRed">#FFCCCC</color>
+    <color name="colorLightPurple">#FFCCE4</color>
+    <color name="colorPurple">#312ED1</color>
 
     <color name="static_main">#226DFF</color>
     <color name="static_white">#FFFFFF</color>
@@ -19,5 +21,5 @@
     <color name="colorTransparentGreen">#7500FF7F</color>
     <color name="colorOrange">#FF9246</color>
     <color name="colorYellow">#FFEE4D</color>
-    <color name="colorRed">#FF1616</color>
+    <color name="colorRed">#C62828</color>
 </resources>
