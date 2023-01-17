@@ -1,30 +1,16 @@
 package com.saadahmedsoft.fakestoreapp.services.repository
 
-import org.json.JSONObject
-import java.io.BufferedReader
-import java.io.IOException
-import java.io.InputStream
-import java.io.InputStreamReader
+import androidx.lifecycle.MutableLiveData
+import com.saadahmedsoft.fakestoreapp.api.RetroInstance
+import com.saadahmedsoft.fakestoreapp.services.model.product.ProductResponse
+import com.saadahmedsoft.fakestoreapp.utils.ObserverUtil
+import com.saadahmedsoft.kotlinhelper.utils.DataState
 
 class AppRepo {
 
-    private fun getErrorMessage(byteStream: InputStream): String {
-        val reader: BufferedReader
-        val sb = StringBuilder()
-        try {
-            reader =
-                BufferedReader(InputStreamReader(byteStream))
-            var line: String?
-            try {
-                while (reader.readLine().also { line = it } != null) {
-                    sb.append(line)
-                }
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
-        } catch (e: IOException) {
-            e.printStackTrace()
-        }
-        return JSONObject(sb.toString()).getString("message")
+    private val instance = RetroInstance.instance
+
+    fun getProducts(limit: String, mutableLiveData: MutableLiveData<DataState<List<ProductResponse>>>) {
+        ObserverUtil.observe(instance.getProducts(limit), mutableLiveData)
     }
 }
