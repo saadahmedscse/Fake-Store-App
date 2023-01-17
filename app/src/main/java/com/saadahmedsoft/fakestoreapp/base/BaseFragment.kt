@@ -76,6 +76,6 @@ abstract class BaseFragment<BINDING: ViewBinding>(
     }
 
     fun onBackPressed() {
-        requireActivity().onBackPressed()
+        requireActivity().onBackPressedDispatcher.onBackPressed()
     }
 }
