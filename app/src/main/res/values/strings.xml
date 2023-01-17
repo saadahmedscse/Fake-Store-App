@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Fake Store App</string>
+
+    //Products Fragment
+    <string name="search_box_hint">কাঙ্খিত পণ্যটি খুঁজুন</string>
+
+    //Item Layout Product
+    <string name="out_of_stock">স্টকে নেই</string>
 </resources>
