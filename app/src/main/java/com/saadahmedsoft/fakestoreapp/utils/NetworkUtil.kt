@@ -26,9 +26,9 @@ import android.os.Build
  * @return boolean of connectivity
  */
 
-fun internetAvailable(context : Context) : Boolean{
+fun Context.internetAvailable() : Boolean{
     var isConnected = false
-    val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    val connectivityManager = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
         val networkCapabilities = connectivityManager.activeNetwork ?: return false
         val activeNetwork = connectivityManager.getNetworkCapabilities(networkCapabilities) ?: return false
