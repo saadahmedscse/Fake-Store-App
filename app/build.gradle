@@ -5,16 +5,21 @@ plugins {
 
 android {
     namespace 'com.saadahmedsoft.fakestoreapp'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.saadahmedsoft.fakestoreapp"
         minSdk 23
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
     }
 
     buildTypes {
@@ -38,7 +43,34 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //Short Intent
+    implementation "com.saadahmedev.shortintent:shortintent:$shortIntentVersion"
+
+    //Tiny DB
+    implementation "com.saadahmedev.tinydb:tinydb:$tinyDBVersion"
+
+    //sSP sDP
+    implementation "com.intuit.ssp:ssp-android:$spVersion"
+    implementation "com.intuit.sdp:sdp-android:$spVersion"
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //Popup Dialog
+    implementation "com.saadahmedev.popup-dialog:popup-dialog:1.0.2"
+
+    //OkHTTP
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 }
