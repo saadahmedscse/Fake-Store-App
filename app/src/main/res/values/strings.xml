@@ -6,4 +6,8 @@
 
     //Item Layout Product
     <string name="out_of_stock">স্টকে নেই</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 </resources>

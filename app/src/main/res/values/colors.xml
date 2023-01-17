@@ -8,7 +8,11 @@
     <color name="colorBackground">#F7F2FF</color>
     <color name="colorLightRed">#FFCCCC</color>
     <color name="colorLightPurple">#FFCCE4</color>
+    <color name="colorLightPurpleDark">#FFBFDD</color>
     <color name="colorPurple">#312ED1</color>
+    <color name="colorPink">#DA2079</color>
+    <color name="colorGradientEnd">#2804BB</color>
+    <color name="colorGradientStart">#5F10DB</color>
 
     <color name="static_main">#226DFF</color>
     <color name="static_white">#FFFFFF</color>
